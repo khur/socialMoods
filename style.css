@@ -1,0 +1,162 @@
+*{
+  list-style-type: none;
+  font-family: helvetica neue, Arial;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+header{
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: 1;
+}
+
+main{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  order: 2;
+}
+
+main > section{
+  flex: 1.75;
+  order: 2;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+aside{
+  flex: .25;
+  order: 1; 
+}
+
+aside > button{
+  width: 100%;
+  max-width: 100px;
+}
+
+
+.card{
+  padding: .5%;
+}
+
+.image{
+  padding: 0;
+  width: 33.3%;
+}
+
+.blog{
+  width: 49%;
+}
+
+.video{
+  width: 100%;
+}
+
+.userInfo{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+footer{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  order: 3;
+}
+
+iframe{
+  min-height: 450px;
+}
+
+.icon{
+  width: 15px;
+}
+
+
+img{
+  width: 100%;
+}
+  
+
+@media (max-width: 600px){
+  header{
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+  }
+
+
+  main{
+    flex-direction: column;
+  }
+  nav{
+    text-align: center;
+  }
+
+  nav > ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .mood > a > span{
+    display: none;
+  }
+
+  .image{
+    width: 100%;
+  }
+
+  .blog{
+    width: 100%;
+  }
+
+  .icon{
+    width: 25px;
+  }
+
+
+}
